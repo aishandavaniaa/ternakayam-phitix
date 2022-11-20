@@ -1,1 +1,6 @@
-# ternakayam-phitix
+echo "# ternakayam-phitix" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:aishandavania/ternakayam-phitix.git
+git push -u origin master
