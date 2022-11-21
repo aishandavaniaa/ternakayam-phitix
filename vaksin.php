@@ -334,11 +334,11 @@ $sesLvl = $_SESSION['level'];
                                         <tr>
                                             <th>No</th>
                                             <th>Id</th>
-                                            <th>Tanggal Vaksin</th>
-                                            <th>Jenis Vaksin</th>
-                                            <th>Jumlah Ayam</th>
-                                            <th>Next Vaksin</th>
-                                            <th>Biaya Vaksin</th>
+                                            <th>Tanggal OVK</th>
+                                            <th>Jenis OVK</th>
+                                            <th>Jumlah OVK</th>
+                                            <th>Next OVK</th>
+                                            <th>Biaya OVK</th>
                                            
                                         </tr>
                                     </thead>
@@ -354,21 +354,21 @@ $sesLvl = $_SESSION['level'];
                                             }        
                                             while ($row = mysqli_fetch_array($result)){
                                                 $id = $row['id'];
-                                                $tanggal_vaksin = $row['tanggal_vaksin'];
-                                                $jenis_vaksin = $row['jenis_vaksin'];
-                                                $jumlah_ayam = $row['jumlah_ayam'];
-                                                $next_vaksin = $row['next_vaksin'];
-                                                $biaya_vaksin = $row['biaya_vaksin'];
+                                                $tanggal_vaksin = $row['tanggal_ovk'];
+                                                $jenis_vaksin = $row['jenis_ovk'];
+                                                $jumlah_ayam = $row['jumlah_ovk'];
+                                                $next_vaksin = $row['next_ovk'];
+                                                $biaya_vaksin = $row['biaya_ovk'];
 
                                         ?>
                                         <tr>
                                             <td><?php echo $no; ?></td>
                                             <td><?php echo $id; ?></td>
-                                            <td><?php echo $tanggal_vaksin; ?></td>
-                                            <td><?php echo $jenis_vaksin; ?></td>
-                                            <td><?php echo $jumlah_ayam; ?></td>
-                                            <td><?php echo $next_vaksin; ?></td>
-                                            <td><?php echo $biaya_vaksin; ?></td>
+                                            <td><?php echo $tanggal_ovk; ?></td>
+                                            <td><?php echo $jenis_ovk; ?></td>
+                                            <td><?php echo $jumlah_ovk; ?></td>
+                                            <td><?php echo $next_ovk; ?></td>
+                                            <td><?php echo $biaya_ovk; ?></td>
                                             <td>
                                             <a href="edit_vaksin.php?id= <?php echo $row['id']; ?>" class="btn btn-primary btn-circle <?php echo $dis; ?>"><i class="fas fa-pen"></i></a>
 
